@@ -18,6 +18,7 @@ export default function Home() {
       <main className={styles.main}>
         <h3>Adtrace Web SDK Demo (Next.js)</h3>
         <button
+          className={styles.button}
           onClick={()=> adtraceSdk.trackEvent({
             eventToken: 'qpw44u',
             revenue: 10,
@@ -27,7 +28,7 @@ export default function Home() {
               {key: 'foo', value: 'bar'}
             ]
           })}
-          style={{fontSize: 18, padding: 15}}>
+          >
           Event tracking
         </button>
       </main>
