@@ -9,7 +9,7 @@ export function AdtraceWrapper({ children }) {
     AdtraceSdk = require('web-adtrace')
 
     AdtraceSdk.initSdk({
-      appToken: "YOUR_APP_TOKEN",
+      appToken: "anykmem88j9x",
       environment: "production", // or "sandbox"
       // ... other optional parameters if needed
     })

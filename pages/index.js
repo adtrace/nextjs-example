@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <button
-          onClick={()=> adtraceSdk.trackEvent({ eventToken: 'EVENT_TOKEN' })}
+          onClick={()=> adtraceSdk.trackEvent({ eventToken: 'qpw44u' })}
           style={{fontSize: 18, padding: 15}}>
           test event
         </button>
