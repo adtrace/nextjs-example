@@ -16,9 +16,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <h3>Adtrace SDK Test</h3>
         <button
           onClick={()=> adtraceSdk.trackEvent({
             eventToken: 'qpw44u',
+            revenue: 10,
+            currency: 'IRR',
             callbackParams: [
               {key: 'key', value: 'value'},
               {key: 'foo', value: 'bar'}
