@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { useAdtraceContext } from '../utils/adtrace'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
@@ -18,7 +17,13 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <button
-          onClick={()=> adtraceSdk.trackEvent({ eventToken: 'qpw44u' })}
+          onClick={()=> adtraceSdk.trackEvent({
+            eventToken: 'qpw44u',
+            callbackParams: [
+              {key: 'key', value: 'value'},
+              {key: 'foo', value: 'bar'}
+            ]
+          })}
           style={{fontSize: 18, padding: 15}}>
           test event
         </button>
