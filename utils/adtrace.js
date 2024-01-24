@@ -1,4 +1,5 @@
 import { createContext, useContext } from 'react';
+import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
 
 const Adtrace = createContext();
 
@@ -11,7 +12,12 @@ export function AdtraceWrapper({ children }) {
     AdtraceSdk.initSdk({
       appToken: "anykmem88j9x",
       environment: "production", // or "sandbox"
-      // ... other optional parameters if needed
+      attributionCallback:(e, attribution)=>{
+        console.log('attribution')
+        console.log(attribution)
+        console.log('e')
+        console.log(e)
+    }
     })
   }
 
