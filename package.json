@@ -1,6 +1,6 @@
 {
-  "name": "sdk-test",
-  "version": "0.2.0",
+  "name": "next-approuter-example",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,12 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.5.1",
-    "eslint": "8.30.0",
-    "eslint-config-next": "13.5.1",
-    "next": "13.5.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
     "web-adtrace": "^2.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
