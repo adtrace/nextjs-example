@@ -1,5 +1,4 @@
 import { createContext, useContext } from 'react';
-import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
 
 const Adtrace = createContext();
 

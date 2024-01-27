@@ -2,8 +2,6 @@ import Head from 'next/head'
 import { useAdtraceContext } from '../utils/adtrace'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import {console} from "next/dist/compiled/@edge-runtime/primitives/console";
-import {useState} from "react";
 
 const inter = Inter({ subsets: ['latin'] })
 
