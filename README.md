@@ -1,6 +1,6 @@
 ## [Next.js](https://nextjs.org) example project for Adtrace
 
-## Getting Started\
+## Getting Started
 - first:
 ```
 npm install --save
