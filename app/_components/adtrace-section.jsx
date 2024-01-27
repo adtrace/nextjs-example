@@ -3,6 +3,7 @@ import { useAdtraceContext } from '../_providers/adtrace-provider';
 import styles from './adtrace-section.module.css';
 
 const AdtraceSection = () => {
+  // NOTE: attention wheerever you want use adtrace hooks put 'use client' in top of the component (use it in client components)
   const adtraceSdk = useAdtraceContext()
   
   return (
